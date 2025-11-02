@@ -1,0 +1,49 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/yoshyhyrro/.cache/dune/db
+# Workspace root: /mnt/c/Users/tyuuw/Documents/ver20/whisper_galois
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/mnt/c/Users/tyuuw/Documents/ver20/whisper_galois/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /home/linuxbrew/.linuxbrew/bin/ocamlc.opt -config > /tmp/dune_dc3384_output
+# Promoting "_build/default/whisper_galois.opam" to "whisper_galois.opam"
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I whisper_cusp/lib/.whisper_cusp.objs/byte -no-alias-deps -opaque -o whisper_cusp/lib/.whisper_cusp.objs/byte/whisper_cusp.cmo -c -impl whisper_cusp/lib/whisper_cusp.ml-gen)
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamldep.opt -modules -impl whisper_cusp/lib/preflow_push_lifting.ml) > _build/default/whisper_cusp/lib/.whisper_cusp.objs/whisper_cusp__Preflow_push_lifting.impl.d
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamldep.opt -modules -impl lib/binary_radix.ml) > _build/default/lib/.whisper_galois.objs/whisper_galois__Binary_radix.impl.d
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I whisper_cusp/lib/.whisper_cusp.objs/byte -I whisper_cusp/lib/.whisper_cusp.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o whisper_cusp/lib/.whisper_cusp.objs/native/whisper_cusp.cmx -c -impl whisper_cusp/lib/whisper_cusp.ml-gen)
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamldep.opt -modules -impl whisper_cusp/lib/linked_list.ml) > _build/default/whisper_cusp/lib/.whisper_cusp.objs/whisper_cusp__Linked_list.impl.d
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamldep.opt -modules -impl whisper_cusp/lib/lut_precompute.ml) > _build/default/whisper_cusp/lib/.whisper_cusp.objs/whisper_cusp__Lut_precompute.impl.d
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamldep.opt -modules -impl whisper_cusp/lib/port_scheduler.ml) > _build/default/whisper_cusp/lib/.whisper_cusp.objs/whisper_cusp__Port_scheduler.impl.d
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.whisper_galois.objs/byte -no-alias-deps -opaque -open Whisper_galois -o lib/.whisper_galois.objs/byte/whisper_galois__Binary_radix.cmo -c -impl lib/binary_radix.ml)
+> File "lib/binary_radix.ml", line 81, characters 7-16:
+> 81 |       (threshold, cusps)
+>             ^^^^^^^^^
+> Error: This expression has type float but an expression was expected of type
+>          int
+[2]
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I whisper_cusp/lib/.whisper_cusp.objs/byte -no-alias-deps -opaque -open Whisper_cusp -o whisper_cusp/lib/.whisper_cusp.objs/byte/whisper_cusp__Linked_list.cmo -c -impl whisper_cusp/lib/linked_list.ml)
+> File "whisper_cusp/lib/linked_list.ml", line 24, characters 8-24:
+> 24 | let rec traverse_inorder root =
+>              ^^^^^^^^^^^^^^^^
+> Error (warning 39 [unused-rec-flag]): unused rec flag.
+[2]
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.test_whisper_galois.eobjs/byte -no-alias-deps -opaque -o test/.test_whisper_galois.eobjs/byte/dune__exe__Test_whisper_galois.cmi -c -intf test/test_whisper_galois.mli)
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I whisper_cusp/lib/.whisper_cusp.objs/byte -no-alias-deps -opaque -open Whisper_cusp -o whisper_cusp/lib/.whisper_cusp.objs/byte/whisper_cusp__Lut_precompute.cmo -c -impl whisper_cusp/lib/lut_precompute.ml)
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_whisper_galois.eobjs/byte -I test/.test_whisper_galois.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.test_whisper_galois.eobjs/native/dune__exe__Test_whisper_galois.cmx -c -impl test/test_whisper_galois.ml)
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I whisper_cusp/lib/.whisper_cusp.objs/byte -I whisper_cusp/lib/.whisper_cusp.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Whisper_cusp -o whisper_cusp/lib/.whisper_cusp.objs/native/whisper_cusp__Lut_precompute.cmx -c -impl whisper_cusp/lib/lut_precompute.ml)
+$ (cd _build/default && /home/linuxbrew/.linuxbrew/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_whisper_galois.exe test/.test_whisper_galois.eobjs/native/dune__exe__Test_whisper_galois.cmx)

@@ -1,0 +1,4 @@
+(executable
+ (public_name whisper_galois)
+ (name main)
+ (libraries whisper_galois))
